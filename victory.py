@@ -25,7 +25,8 @@ spisok_sprav = {'Билл Гейтс ': year_billGeitc,
 
 spisok = ['Билл Гейтс ', 'Джон Рокфеллер', 'Эндрю Карнеги', 'Генри Форд', 'Марк Цууенберг']
 newtest = "Да"
-while newtest == 'Да' or newtest == 'да':
+
+while newtest.upper() == 'ДА':
     result = random.sample(spisok, 5)
     chetchik = 0
     for i in result:
