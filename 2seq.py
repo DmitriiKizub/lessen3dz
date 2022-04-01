@@ -7,12 +7,15 @@ if '/' in input_string:
     a = ('/')
 if ';' in input_string:
     a = (';')
-vals = input_string.split(a)
-def get_numers(vals):
-    ver = []
-    ver_ds = set(vals)
+if ' ' in input_string:
+    a = (' ')
+vals = set(input_string.split(a))
+print('Результат:', list(vals))
 
-    for vals in ver_ds:
-        ver.append(vals)
-    return ver
-print(get_numers(vals))
+#def get_numers(vals):
+   # ver = []
+ #   print(vals)
+  #  for vals in vals:
+   #     ver.append(vals)
+        #return ver
+#get_numers(vals)
